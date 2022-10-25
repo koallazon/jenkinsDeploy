@@ -1,5 +1,5 @@
 # jekins-deploy
-정말 좋다
+대부님
 ## Project setup
 ```
 npm install
