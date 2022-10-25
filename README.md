@@ -1,5 +1,6 @@
 # jekins-deploy
 
+배포합니다.
 ## Project setup
 ```
 npm install
