@@ -1,1 +1,2 @@
-console.log('💚 before_install 💚💚')
+#!/bin/bash
+echo "💚 before_install 💚"

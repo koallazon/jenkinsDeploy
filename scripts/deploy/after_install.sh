@@ -1,1 +1,2 @@
-console.log('💖 after_install 💖')
+#!/bin/bash
+echo "💖 after_install 💖"
