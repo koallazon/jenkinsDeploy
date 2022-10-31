@@ -1,0 +1,7 @@
+.git
+.gitignore
+.dockerignore
+Dockerfile
+.idea
+.nuxt
+node_modules
