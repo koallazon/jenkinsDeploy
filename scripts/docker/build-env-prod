@@ -1,0 +1,2 @@
+--build-arg PROFILE=prod \
+--build-arg APP_NAME=jenkins-vue \
