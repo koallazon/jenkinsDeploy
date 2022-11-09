@@ -1,0 +1,28 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/ec2-user/target/deploy
+
+permissions:
+  - object: /home/ec2-user/target/deploy
+    pattern: '**'
+    owner: ec2-user
+    group: ec2-user
+
+hooks:
+  beforeInstall:
+    - location: scripts/deploy/before_install.sh
+      timeout: 300
+  AfterInstall:
+    - location: scripts/deploy/after_install.sh
+      timeout: 300
+  ApplicationStart:
+    - location: scripts/deploy/application_start.sh
+      timeout: 300
+  ValidateService:
+    - location: scripts/deploy/validate_service.sh
+      timeout: 300
+  ApplicationStop:
+    - location: scripts/deploy/application_stop.sh
+      timeout: 300

@@ -1,1 +1,1 @@
-npm run start:${PROFILE}
+yarn start:${PROFILE}

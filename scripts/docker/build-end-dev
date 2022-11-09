@@ -1,2 +1,0 @@
---build-arg PROFILE=dev \
---build-arg APP_NAME=jenkins-vue \
