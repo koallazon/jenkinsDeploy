@@ -11,9 +11,6 @@ ENV HOST=0.0.0.0
 # 타임존 설정
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
-# Install app dependencies
-RUN apk update && apk upgrade && apk add yarn
-
 # app 디렉토리 생성
 RUN mkdir -p /${APP_NAME}
 
@@ -24,7 +21,7 @@ WORKDIR /${APP_NAME}
 ADD . /${APP_NAME}
 
 # 앱 의존성 설치 및 앱 빌드
-RUN yarn && yarn build:${PROFILE}
+RUN npm install && npm run build:${PROFILE}
 
 # app run
 EXPOSE 80 3000
