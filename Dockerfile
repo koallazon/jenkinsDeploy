@@ -21,7 +21,9 @@ WORKDIR /${APP_NAME}
 ADD . /${APP_NAME}
 
 # 앱 의존성 설치 및 앱 빌드
-RUN npm install && npm run build:${PROFILE}
+RUN npm install
+
+RUN npm run build:${PROFILE}
 
 # app run
 EXPOSE 80 3000

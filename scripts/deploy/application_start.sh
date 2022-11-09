@@ -1,6 +1,6 @@
 #!/bin/sh
 
-docker run -d -P \
+docker run -d -p 80:3000 \
   --log-driver=${LOG_DRIVER} \
   --log-opt awslogs-group=${AWSLOGS_GROUP} \
   --log-opt awslogs-region=${AWSLOGS_REGION} \
