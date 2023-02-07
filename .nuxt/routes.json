@@ -1,9 +1,20 @@
 [
   {
+    "name": "content",
+    "path": "/content",
+    "component": "/Users/tglee/Documents/study/jenkins-deploy/pages/content.vue",
+    "chunkName": "pages/content"
+  },
+  {
+    "name": "main",
+    "path": "/main",
+    "component": "/Users/tglee/Documents/study/jenkins-deploy/pages/main.vue",
+    "chunkName": "pages/main"
+  },
+  {
     "name": "index",
     "path": "/",
-    "component": "/Users/tglee/Documents/deploy/jenkinsDeploy/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_b0fa76dc"
+    "component": "/Users/tglee/Documents/study/jenkins-deploy/pages/index.vue",
+    "chunkName": "pages/index"
   }
 ]

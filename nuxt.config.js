@@ -40,5 +40,27 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+  router: {
+    middleware: 'state',
+  },
   serverMiddleware: ['~/server/api/index.js'],
+  vue: {
+    config: {
+      errorHandler: (error, vm, info) => {
+        console.log('🚀 ~ file: nuxt.config.js:50 ~ errorHandler', error, vm, info)
+      },
+    },
+  },
+  hooks: {
+    render: {
+      errorMiddleware(app) {
+        app.use((error, _req, _res, next) => {
+          if (error) {
+            console.log('Logged in errorMiddleware', error)
+          }
+          next(error)
+        })
+      },
+    },
+  },
 }
