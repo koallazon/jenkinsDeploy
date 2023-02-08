@@ -3,18 +3,21 @@
     "name": "content",
     "path": "/content",
     "component": "/Users/tglee/Documents/study/jenkins-deploy/pages/content.vue",
-    "chunkName": "pages/content"
+    "chunkName": "pages/content",
+    "_name": "_890ad470"
   },
   {
     "name": "main",
     "path": "/main",
     "component": "/Users/tglee/Documents/study/jenkins-deploy/pages/main.vue",
-    "chunkName": "pages/main"
+    "chunkName": "pages/main",
+    "_name": "_762943fa"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/tglee/Documents/study/jenkins-deploy/pages/index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_30741761"
   }
 ]

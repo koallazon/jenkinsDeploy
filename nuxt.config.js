@@ -55,10 +55,16 @@ export default {
     render: {
       errorMiddleware(app) {
         app.use((error, _req, _res, next) => {
-          if (error) {
-            console.log('Logged in errorMiddleware', error)
-          }
-          next(error)
+          // if (error) {
+          //   next(error)
+
+          // }
+          // next(error)
+          console.log('Logged in errorMiddleware', error)
+          _res.writeHead(307, {
+            Location: '/error',
+          })
+          _res.end()
         })
       },
     },
